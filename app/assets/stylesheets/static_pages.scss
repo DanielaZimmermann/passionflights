@@ -1,0 +1,52 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.main-container {
+	padding: 15px; 
+	background-color: rgba(360, 360, 360, 0.4);
+	display: inline-block;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+.main-container h2 {
+	margin-top: 0px;
+}
+
+.index {
+	background-image: image-url("surf_wave.jpeg");
+	background-size: 100% auto;
+}
+
+.btn-searchpage{
+	position: absolute;
+	font-size: 1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-style: solid;
+	bottom: -70px;
+	border-width: 1px;
+	padding: 10px;
+	right: 37px;
+	background-color: rgba(360, 360, 360, 0.4);
+	color: #fff;
+}
+
+span.btn-create a {
+	color: #fff;
+	text-decoration:none;
+}
+
+.contact {
+	background-image: image-url("ocean_pineapple.jpeg");
+	background-size: 100% auto;
+}
+
+.about {
+	background-image: image-url("surf_male.jpeg");
+	background-size: 100% auto;
+}
+

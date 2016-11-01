@@ -1,0 +1,21 @@
+// Place all the styles related to the searches controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-container {
+	padding: 15px; 
+	background-color: rgba(360, 360, 360, 0.4);
+	display: inline-block;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+.main-container h2 {
+	margin-top: 0px;
+}
+
+.searches {
+	background-image: image-url("surfboard.jpeg");
+	background-size: 100% auto;
+}

@@ -1,0 +1,21 @@
+
+<div class="container-fluid">
+  <div class="jumbotron index">
+    <div class= "main-container">
+      <h1>Wanna go surfing?</h1>
+      <h2>Find flights to surf destinations</h2>
+      <p id="notice"><%= notice %></p>
+
+      <%= render 'form', search: @search %>
+
+      <br>
+
+      <%= link_to 'New Search', new_search_path %>
+
+      <span class="btn-searchpage"><%= link_to 'FIND FLIGHTS', searches_path %></span>
+
+      
+    </div>
+  </div> <!-- /jumbotron -->
+</div> <!-- container-fluid -->
+

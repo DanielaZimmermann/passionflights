@@ -1,0 +1,47 @@
+
+<div class="container-fluid">
+  <div class="jumbotron index">
+    <div class= "main-container">
+      <h1>Wanna go surfing?</h1>
+      <h2>Find flights to surf destinations</h2>
+      <p id="notice"><%= notice %></p>
+
+      <h1>Searches</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Outbound</th>
+            <th>Flight duration</th>
+            <th>Departure</th>
+            <th>Return</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @searches.each do |search| %>
+            <tr>
+              <td><%= search.outbound %></td>
+              <td><%= search.flight_duration %></td>
+              <td><%= search.departure %></td>
+              <td><%= search.return %></td>
+              <td><%= link_to 'Show', search %></td>
+              <td><%= link_to 'Edit', edit_search_path(search) %></td>
+              <td><%= link_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br>
+
+      <%= link_to 'New Search', new_search_path %>
+
+      <span class="btn-searchpage"><%= link_to 'FIND FLIGHTS', searches_path %></span>
+
+      <%= render 'form', search: @search %>
+    </div>
+  </div> <!-- /jumbotron -->
+</div> <!-- container-fluid -->
+

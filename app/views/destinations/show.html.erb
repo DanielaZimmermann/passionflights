@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>IATA Code:</strong>
+  <%= @destination.iata_code %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @destination.city %>
+</p>
+
+<p>
+  <strong>Continent:</strong>
+  <%= @destination.continent %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @destination.area %>
+</p>
+
+<p>
+  <strong>Season Months:</strong>
+  <%= @destination.season_months %>
+</p>
+
+<%= link_to 'Edit', edit_search_path(@destination) %> |
+<%= link_to 'Back', destinations_path %>

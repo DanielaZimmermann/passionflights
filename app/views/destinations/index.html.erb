@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <div class="row">
+    <div class="col-md-10 col-xs-10">
+      <h1>OUR DESTINATIONS</h1>
+    </div>
+
+    <div class="row">
+      <% @destinations.each do |destination| %>
+        <div class="col-sm-2 col-md-4">
+        	<%= link_to image_tag("https://source.unsplash.com/355x250/?france", class: "img-responsive hover-image"), destination %>
+          <p><%= destination.city %></p>
+        </div><!-- /col -->
+      <% end %>
+    </div>
+
+
+</div><!-- /container -->
+<br>

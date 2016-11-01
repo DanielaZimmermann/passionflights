@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Outbound:</strong>
+  <%= @search.outbound %>
+</p>
+
+<p>
+  <strong>Flight duration:</strong>
+  <%= @search.flight_duration %>
+</p>
+
+<p>
+  <strong>Departure:</strong>
+  <%= @search.departure %>
+</p>
+
+<p>
+  <strong>Return:</strong>
+  <%= @search.return %>
+</p>
+
+<%= link_to 'Edit', edit_search_path(@search) %> |
+<%= link_to 'Back', searches_path %>
